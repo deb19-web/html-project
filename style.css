@@ -28,3 +28,6 @@ img{
 a:hover{
     color: rgb(0, 153, 255);
 }
+button{
+    font-size: 25px; border-radius: 10px; background-color: rgb(197, 184, 184); color: blue;
+}
