@@ -1,26 +1,18 @@
 *{
-    background-color: beige;
+    
     font-size: 20px;
     font-family: "Abel", sans-serif;
     font-weight: 400;
 }
 h3{
-    color: red;
+    color: rgba(255, 0, 0, 0.795);
 }
 h2 {
     background-color: peachpuff;
-}
-h1{
-    border: 10px solid brown;
-    background-color: rgb(187, 71, 71);
-    font-size: 30px;
-    
+    text-align: center;
 }
 h4 {
     background-color: peachpuff;
-}
-img{
-    border:10px solid black; 
 }
 .a{
     text-align: center;
@@ -28,6 +20,6 @@ img{
 a:hover{
     color: rgb(0, 153, 255);
 }
-button{
-    font-size: 25px; border-radius: 10px; background-color: rgb(197, 184, 184); color: blue;
+button:hover{
+    color: gray;
 }
