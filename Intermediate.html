@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo.jpg">
     <style>
+        .container{
+            position: relative;
+            background-color: black;
+            z-index: 1;
+            background-size: cover;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(Intermediate.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.9;
+            z-index: -1;
+        }
         body{
             background-image: url(Intermediate.gif);
             background-attachment: fixed;
@@ -28,20 +48,22 @@
             color: white;
         }
         button{
-            position: absolute;
+            float: right;
             left: 1450px;
             font-size: 30px;
         }
         .tips{
-            position: absolute;
-            bottom: 200px;
-            left: 800px;
-            
+            border: 1px solid peachpuff;
+            height: 400px;
+            width: 800px;
+            float: right;
+            margin-right: 20px;
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
     <h1>Intermediate Home Workout Program</h1>
     <p style="background-color: gray; color: white; text-align: center;">This program builds on basic exercises and incorporates more challenging movements to enhance strength, endurance, and flexibility. It requires minimal equipment, 
         such as dumbbells or resistance bands, but can be adapted based on what you have available.</p>
@@ -51,6 +73,18 @@
         <h3>Warm-Up (5-10 minutes)</h3>
         <ol>
             <li>Jump Rope (or simulate without a rope) - 1 minute</li>
+
+            <div class="tips">
+                <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
+                <ul>
+                    <li><p>Proper Form: Ensure proper technique to avoid injury and maximize effectiveness.</p></li>
+                    <li><p>Intensity: Adjust weights and reps as needed based on your fitness level and goals.</p></li>
+                    <li><p>Progression: Increase weights, reps, or sets as you get stronger.</p></li>
+                    <li><p>Recovery: Allow adequate rest and recovery between workouts to avoid overtraining.</p></li>
+                </ul>
+                <p style="color: rgba(255, 0, 0, 0.795);">This program can be done 3-4 times a week. Incorporate rest days or lighter activity (like walking or yoga) to allow your body to recover.</p>
+            </div>
+
             <li>Dynamic Lunges - 1 minute (alternating legs)</li>
             <li>Arm Swings and Circles - 1 minute (30 seconds forward, 30 seconds backward)</li>
             <li>Leg Swings - 1 minute (30 seconds each leg)</li>
@@ -119,15 +153,6 @@
             <li>Seated Hamstring Stretch - 1 minute per leg</li>
             <li>Chest Stretch - 1 minute (hands behind back, gently lift arms)</li>
         </ol>
-        <div class="tips">
-        <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
-        <ul>
-            <li><p>Proper Form: Ensure proper technique to avoid injury and maximize effectiveness.</p></li>
-            <li><p>Intensity: Adjust weights and reps as needed based on your fitness level and goals.</p></li>
-            <li><p>Progression: Increase weights, reps, or sets as you get stronger.</p></li>
-            <li><p>Recovery: Allow adequate rest and recovery between workouts to avoid overtraining.</p></li>
-        </ul>
-        <p style="color: rgba(255, 0, 0, 0.795);">This program can be done 3-4 times a week. Incorporate rest days or lighter activity (like walking or yoga) to allow your body to recover.</p>
     </div>
 </body>
 </html>

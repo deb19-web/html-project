@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo.jpg">
     <style>
+        .container{
+            position: relative;
+            background-color: black;
+            z-index: 1;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(BeginnerBG.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.5;
+            z-index: -1;
+        }
         body{
             background-image: url(BeginnerBG.gif);
             background-attachment: fixed;
@@ -17,6 +36,7 @@
             background-size: cover;
         }
         h1{
+            color: white;
             text-align: center;
             font-size: 50px;
         }
@@ -27,19 +47,21 @@
             color: white;
         }
         button{
-            position: absolute;
+            float: right;
             left: 1450px;
             font-size: 30px;
         }
         .tips{
-            position: absolute;
-            bottom: 200px;
-            left: 550px;
-            
+            border: 1px solid peachpuff;
+            height: 400px;
+            width: 800px;
+            float: right;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Beginner Home Workout Program</h1>
     <p style="background-color: pink; text-align: center;">It’s designed to build strength, improve cardiovascular fitness, and enhance flexibility.</p>
     <a href="Programs.html">
@@ -48,6 +70,19 @@
     <h3>Warm-Up (5-10 minutes)</h3>
     <ol>
         <li>Arm Circles - 30 seconds forward, 30 seconds backward</li>
+
+        <div class="tips">
+            <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
+            <ul>
+                <li><p>Focus on Form: Ensure proper form for each exercise to maximize benefits and prevent injury.</p></li>
+                <li><p>Gradual Progression: Start with the recommended reps and sets, and gradually increase as you become morecomfortable and stronger.</p></li>
+                <li><p>Stay Hydrated: Drink water before, during, and after your workout.</li>
+                <li><p>Listen to Your Body: If you experience pain (not to be confused with muscle fatigue), stop and assess.</p></li>
+            </ul>
+            <p style="color: rgba(255, 0, 0, 0.795);">This program can be performed 2-3 times a week with rest days in between. Adjust the intensity based on your fitness level and progress as you build strength and 
+                endurance.</p>
+                </div>
+
         <li>Hip Circles - 30 seconds each direction</li>
         <li>Leg Swings - 30 seconds each leg (front-to-back)</li>
     </ol>
@@ -91,16 +126,6 @@
         <li>Cat-Cow Stretch - 1 minut3</li>
         <li>Seated Hamstring Stretch - 1 minute each leg</li>
     </ol>
-    <div class="tips">
-    <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
-    <ul>
-        <li><p>Focus on Form: Ensure proper form for each exercise to maximize benefits and prevent injury.</p></li>
-        <li><p>Gradual Progression: Start with the recommended reps and sets, and gradually increase as you become morecomfortable and stronger.</p></li>
-        <li><p>Stay Hydrated: Drink water before, during, and after your workout.</li>
-        <li><p>Listen to Your Body: If you experience pain (not to be confused with muscle fatigue), stop and assess.</p></li>
-    </ul>
-    <p style="color: rgba(255, 0, 0, 0.795);">This program can be performed 2-3 times a week with rest days in between. Adjust the intensity based on your fitness level and progress as you build strength and 
-        endurance.</p>
-        </div>
+</div>
 </body>
 </html>

@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo.jpg">
     <style>
+        .container{
+            position: relative;
+            background-color: black;
+            z-index: 1;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(MasterBG.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: .5;
+            z-index: -1;
+        }
         body{
             background-image: url(MasterBG.gif);
             background-attachment: fixed;
@@ -28,19 +47,21 @@
             color: white;
         }
         button{
-            position: absolute;
+            float: right;
             left: 1450px;
             font-size: 30px;
         }
         .tips{
-            position: absolute;
-            bottom: 100px;
-            left: 700px;
-            
+            border: 1px solid peachpuff;
+            height: 480px;
+            width: 800px;
+            float: right;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Master-Level Home Workout Program</h1>
         <p style="background-color: gray; color: white; text-align: center;">A master-level home workout program is designed for individuals who have achieved a high level of fitness and are looking to maintain or further enhance their peak 
             physical condition. This program includes highly advanced exercises, incorporates multiple training modalities, and focuses on strength, power, endurance, and agility.
@@ -52,6 +73,20 @@
              <ol>
                 <li>Dynamic Warm-Up Routine:</li>
                 <ul>
+                    
+                    <div class="tips">
+                        <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
+                        <ul>
+                           <li><p>Technical Mastery: Ensure you maintain impeccable form to maximize benefits and avoid injury. Advanced exercises often require precise technique.</p></li>
+                           <li><p>Progressive Overload: Continually challenge yourself by increasing weights, adjusting exercise variations, or adding more complex movements.</p></li>
+                           <li><p>Recovery: Prioritize recovery and consider integrating techniques like active recovery, deep tissue massage, or additional mobility work on rest days.</p></li>
+                           <li><p>Periodization: To avoid plateaus and overtraining, consider varying your workout routine periodically or integrating different training phases 
+                               (e.g., strength, hypertrophy, power).</p></li>
+                        </ul>
+                        <p style="color: rgba(255, 0, 0, 0.795);">This master-level program is designed to push your limits, so listen to your body and adjust as necessary. Aim for 4-6 workouts per week, with sufficient rest
+                            and recovery to support optimal performance and progress.</p>
+                           </div>
+                           
                     <li>Jump Rope - 3 minutes</li>
                     <li>High Knees - 1 minute</li>
                     <li>Butt Kicks - 1 minute</li>
@@ -148,17 +183,6 @@
                     <li>Glutes - 1 minute per side</li>
                 </ul>
              </ol>
-             <div class="tips">
-             <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
-             <ul>
-                <li><p>Technical Mastery: Ensure you maintain impeccable form to maximize benefits and avoid injury. Advanced exercises often require precise technique.</p></li>
-                <li><p>Progressive Overload: Continually challenge yourself by increasing weights, adjusting exercise variations, or adding more complex movements.</p></li>
-                <li><p>Recovery: Prioritize recovery and consider integrating techniques like active recovery, deep tissue massage, or additional mobility work on rest days.</p></li>
-                <li><p>Periodization: To avoid plateaus and overtraining, consider varying your workout routine periodically or integrating different training phases 
-                    (e.g., strength, hypertrophy, power).</p></li>
-             </ul>
-             <p style="color: rgba(255, 0, 0, 0.795);">This master-level program is designed to push your limits, so listen to your body and adjust as necessary. Aim for 4-6 workouts per week, with sufficient rest
-                 and recovery to support optimal performance and progress.</p>
-                </div>
+     </div>    
 </body>
 </html>

@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo.jpg">
     <style>
+        .container{
+            position: relative;
+            background-color: black;
+            z-index: 1;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(AdvancedBG.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.5;
+            z-index: -1;
+        }
         body{
             background-image: url(AdvancedBG.gif);
             background-attachment: fixed;
@@ -17,26 +36,35 @@
             background-size: cover;
         }
         h1{
+            color: white;
             text-align: center;
             font-size: 50px;
         }
         button{
-            position: absolute;
+            float: right;
             left: 1450px;
             font-size: 30px;
         }
         .tips{
-            position: absolute;
-            bottom: 150px;
-            left: 700px;
-            
+            border: 1px solid peachpuff;
+            height: 410px;
+            width: 800px;
+            float: right;
+            margin-right: 20px;
+        }
+        ol{
+            color: white;
+        }
+        ul{
+            color: white;
         }
         
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Advanced Home Workout Program</h1>
-        <P style="background-color: peachpuff; text-align: center;">This program incorporates high-intensity exercises and complex movements to challenge strength, endurance, and flexibility. It’s designed for 
+        <P style="background-color: gray;color: white; text-align: center;">This program incorporates high-intensity exercises and complex movements to challenge strength, endurance, and flexibility. It’s designed for 
             those who have a solid foundation and are looking to push their limits.</P>
             <a href="Programs.html">
                 <button>Back</button>
@@ -44,6 +72,19 @@
             <h3>Warm-Up (10 minutes)</h3> 
             <ol>
                 <li>High Knees - 1 minute</li>
+
+                <div class="tips">
+                    <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
+                    <ul>
+                        <li><p>Intensity: Adjust weights and exercise difficulty to match your fitness level. Ensure you’re pushing yourself but not compromising form.</p></li>
+                        <li><p>Form and Safety: Proper technique is crucial to prevent injury. Consider using a mirror or recording yourself to check form.</p></li>
+                        <li><p>Progressive Overload: Gradually increase weights, reps, or sets as you become stronger.</p></li>
+                        <li><p>Recovery: Allow at least one rest day between intense workouts to aid recovery. Incorporate light activities or stretching on rest days.</p></li>
+                    </ul>
+                    <p style="color: rgba(255, 0, 0, 0.795);">This program can be performed 4-5 times a week, with adequate rest and recovery. Adjust the volume or intensity as needed to suit your individual
+                         fitness goals and conditions.</p>
+        </div>
+
                 <li>Burpees - 1 minute</li>
                 <li>Mountain Climbers - 1 minute</li>
                 <li>Dynamic Lunges - 1 minute</li>
@@ -129,16 +170,6 @@
                 <li>Child’s Pose - 1 minute</li>
                 <li>Spinal Twist - 1 minute per side</li>
             </ol>
-            <div class="tips">
-            <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
-            <ul>
-                <li><p>Intensity: Adjust weights and exercise difficulty to match your fitness level. Ensure you’re pushing yourself but not compromising form.</p></li>
-                <li><p>Form and Safety: Proper technique is crucial to prevent injury. Consider using a mirror or recording yourself to check form.</p></li>
-                <li><p>Progressive Overload: Gradually increase weights, reps, or sets as you become stronger.</p></li>
-                <li><p>Recovery: Allow at least one rest day between intense workouts to aid recovery. Incorporate light activities or stretching on rest days.</p></li>
-            </ul>
-            <p style="color: rgba(255, 0, 0, 0.795);">This program can be performed 4-5 times a week, with adequate rest and recovery. Adjust the volume or intensity as needed to suit your individual
-                 fitness goals and conditions.</p>
-</div>
+        </div>
 </body>
 </html>

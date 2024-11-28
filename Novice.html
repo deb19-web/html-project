@@ -10,43 +10,85 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Logo.jpg">
     <style>
-        div{
+        .container{
+            position: relative;
+            background-color: black;
+            z-index: 1;
+            background-size: cover;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-image: url(Novicebg.gif);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        body{
+            background-image: url(Novicebg.gif);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         h1{
+            color: white;
             text-align: center;
             font-size: 50px;
         }
+        ol{
+            color: white;
+        }
+        ul{
+            color: white;
+        }
         button{
-            position: absolute;
             left: 1450px;
             font-size: 30px;
+            float: right;
         }
         .tips{
-            position:  absolute;
-            bottom: 300px;
-            left: 550px;
-            
+            border: 1px solid peachpuff;
+            height: 300px;
+            width: 800px;
+            float: right;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
     <h1>Novice Home Workout Program</h1>
-    <p style="background-color: peachpuff; text-align: center;">It focuses on building a foundation of strength, endurance, and flexibility. Aim to do this routine 3 times a week, allowing rest days in between.</p>
+    <p style="background-color: gray; text-align: center; color: white;">It focuses on building a foundation of strength, endurance, and flexibility. Aim to do this routine 3 times a week, allowing rest days in between.</p>
     <a href="Programs.html">
         <button>Back</button>
         </a>
     <h3>Warm-Up (5-10 minutes)</h3>
     <ul>
         <li>Jumping Jacks - 1 minute</li>
+
+        <div class="tips">
+            <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
+            <ul>
+                <li><p>Form Over Reps: Focus on maintaining proper form to prevent injury.</p></li>
+                <li><p>Progress Gradually: Increase reps, sets, or duration as you get more comfortable.</p></li>
+                <li><p>Hydrate and Rest: Drink plenty of water and ensure adequate recovery time between workouts.</p></li>
+            </ul>
+            <p style="color: rgba(255, 0, 0, 0.795);">Feel free to modify the exercises based on your comfort level and gradually increase the intensity as you gain strength and confidence.</p>
+            </div>
+
         <li>High Knees - 1 minute</li>
         <li>Arm Circles - 30 seconds each direction</li>
         <li>Bodyweight Squats - 1 minute</li>
     </ul>
+
+    
+
     <h3>Workout Routine (20-30 minutes)</h3>
     <ol>
         <li>Bodyweight Squats</li>
@@ -87,15 +129,7 @@
         <li>Child’s Pose - 1 minute</li>
         <li>Seated Hamstring Stretch - 1 minute each leg</li>
     </ol>
-    <div class="tips">
-    <h5 style="color: rgba(255, 0, 0, 0.795);">Tips:</h5>
-    <ul>
-        <li><p>Form Over Reps: Focus on maintaining proper form to prevent injury.</p></li>
-        <li><p>Progress Gradually: Increase reps, sets, or duration as you get more comfortable.</p></li>
-        <li><p>Hydrate and Rest: Drink plenty of water and ensure adequate recovery time between workouts.</p></li>
-    </ul>
-    <p style="color: rgba(255, 0, 0, 0.795);">Feel free to modify the exercises based on your comfort level and gradually increase the intensity as you gain strength and confidence.</p>
-    </div>
+    
 </div>
 </body>
 </html>
